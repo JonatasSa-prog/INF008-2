@@ -18,7 +18,7 @@ public class CompararMapaCor {
         for(int i = 0; i < vet.length; i++){
             double tamanho = mapas.getMapaRGB(i).getAltura() * mapas.getMapaRGB(i).getLargura();
             int pctAux = (int) ((tamanho - vet[i]) / tamanho * 100);
-            if((100 - pctAux) >= pctMinimo / 100)
+            if((100 - pctAux) >= pctMinimo)
                 mapasAux.add((MapaRGB) mapas.getMapaRGB(i));        
             }
 
